@@ -21,3 +21,20 @@ dev = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+# pyproject.toml (the tool must support this file)
+
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "single"
+
+[tool.ruff.lint]
+select = [
+    "B", # flake8-bugbear rules
+    "E", # pycodestyle error rules
+    "F", # pyflakes rules
+    "I", # isort rules
+    "W", # pycodestyle warning rules
+    ]
